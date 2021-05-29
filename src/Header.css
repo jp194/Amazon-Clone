@@ -1,0 +1,70 @@
+.mylogo{
+    width:100px;
+    margin-top: 10px;
+    margin-left:20px;
+    margin-right:20px;
+    object-fit: contain;  /*do not stretch logo even if window size is changed */
+}
+
+.Header{
+background-color: #131921;
+display:flex;  /*By default display was inline which displayed logo and search bar in vertical order */
+align-items: center;
+position:sticky;
+top:0;
+z-index: 100;  
+}
+
+.header_searchIcon{
+    background-color: #cd9042;
+    padding: 5px !important;     /*important added bcoz search Icon is taken from materialUI and has its own css  */
+    height: 22px;
+}
+
+.header_search{
+    display:flex;
+    flex:1;    /*making search take maximum width  */
+}
+
+.header_searchInput{
+    height: 10px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+}
+
+.header_nav{
+    display: flex;
+    flex: 1;
+}
+
+.header_link{
+    color:white;
+    text-decoration: none;
+}
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.header_optionLineOne{
+  font-size: 10px;
+}
+
+.header_optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+}
+
+.header_basketCount{
+margin-left:10px;
+margin-left:10px;
+}
